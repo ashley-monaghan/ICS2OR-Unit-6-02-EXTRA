@@ -12,9 +12,9 @@ class Program
     public static async Task Main()
     {
 
-      string userAnswer;
-      int counter = 0;
-      
+        string userAnswer;
+        int counter = 0;
+     
         Console.WriteLine("Hello user! Would you like to quit?");
         Console.WriteLine("");
 
@@ -34,13 +34,13 @@ class Program
             var someText = await File.ReadAllTextAsync(@"WriteText.txt");
             Console.WriteLine(someText);
             Console.WriteLine("");
-            
+
             Console.WriteLine("How about now? Enter either yes or no: ");
             userAnswer = (Console.ReadLine());
             Console.WriteLine("");
         };
 
-            Console.WriteLine("Good bye!");
-            Console.WriteLine("\nDone.");
+        Console.WriteLine("Good bye!");
+        Console.WriteLine("\nDone.");
     }
 }
