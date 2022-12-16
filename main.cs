@@ -1,9 +1,15 @@
+// Created by: Ashley Monaghan
+// Created on: Nov 2022
+//
+//This program creats a file and updates the number presented
+
 using System;
 using System.Threading.Tasks;
 using System.IO;
 
-class Program {
-  public static async Task Main()
+class Program
+{
+    public static async Task Main()
     {
 
       string userAnswer;
@@ -16,15 +22,15 @@ class Program {
         Console.WriteLine("");
         userAnswer = (Console.ReadLine());
 
-        while (userAnswer == "no") 
+        while (userAnswer == "no")
         {
             counter++;
-            string text = "Total: " + counter; 
-          
+            string text = "Total: " + counter;
+
             await File.WriteAllTextAsync("WriteText.txt", text);
             Console.WriteLine("File Updated...");
             Console.WriteLine("");
-            
+
             var someText = await File.ReadAllTextAsync(@"WriteText.txt");
             Console.WriteLine(someText);
             Console.WriteLine("");
