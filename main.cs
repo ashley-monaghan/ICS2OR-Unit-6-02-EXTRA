@@ -8,8 +8,8 @@ class Program {
 
       string userAnswer;
       int counter = 0;
-
-        Console.WriteLine("Hello user, would you like to quit?");
+      
+        Console.WriteLine("Hello user! Would you like to quit?");
         Console.WriteLine("");
 
         Console.WriteLine("Enter either yes or no ");
