@@ -14,7 +14,7 @@ class Program
 
         string userAnswer;
         int counter = 0;
-     
+
         Console.WriteLine("Hello user! Would you like to quit?");
         Console.WriteLine("");
 
